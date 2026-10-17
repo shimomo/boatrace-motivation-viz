@@ -15,7 +15,7 @@
 ## データ取得元
 本アプリで使用している出走表データは、以下の別リポジトリで開発・公開している疑似 API から取得しています。
 
-- リポジトリ名: [BoatraceOpenAPI/programs](https://github.com/BoatraceOpenAPI/programs)
+- リポジトリ名: [boatraceopenapi/programs](https://github.com/boatraceopenapi/programs)
 - 公開先 URL: GitHub Pages を利用した静的サイトとして提供
 - API の仕様や更新状況により、本アプリの動作に影響が出る場合があります。
 
