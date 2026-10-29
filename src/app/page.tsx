@@ -19,7 +19,7 @@ export default function Page() {
         const data = await fetchPrograms();
         setPrograms(data);
 
-        const firstStadiumNumber = data?.[0]?.programs?.[0]?.race_stadium_number ?? null;
+        const firstStadiumNumber = data?.[0]?.programs?.[0]?.stadium_number ?? null;
         setSelectedStadiumNumber(firstStadiumNumber);
       } catch (err) {
         if (err instanceof Error) {
@@ -42,12 +42,12 @@ export default function Page() {
   }
 
   const uniqueStadiumNumbers = Array.from(
-    new Set(programs[0].programs.map(program => program.race_stadium_number))
+    new Set(programs[0].programs.map(program => program.stadium_number))
   );
 
   const filteredPrograms = selectedStadiumNumber
-    ? programs[0].programs.filter(program => program.race_stadium_number === selectedStadiumNumber)
-    : programs[0].programs.filter(program => program.race_stadium_number === programs[0].programs[0].race_stadium_number);
+    ? programs[0].programs.filter(program => program.stadium_number === selectedStadiumNumber)
+    : programs[0].programs.filter(program => program.stadium_number === programs[0].programs[0]?.stadium_number);
 
   return (
     <div className={`flex min-h-screen`}>
@@ -66,7 +66,7 @@ export default function Page() {
         <h1 className={`text-2xl font-bold mb-4`}>本日のボートレース（体重の増減表）</h1>
         {filteredPrograms.map(program => (
           <ProgramCard
-            key={`${program.race_stadium_number}-${program.race_number}`}
+            key={`${program.stadium_number}-${program.race_number}`}
             program={program}
             pastPrograms={programs}
           />
