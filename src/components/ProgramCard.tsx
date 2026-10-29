@@ -13,13 +13,13 @@ export const ProgramCard = ({ program, pastPrograms }: Props) => {
     <div className={`grid place-items-center mt-6`}>
       <div className={`rounded overflow-hidden shadow-lg w-full`}>
         <div className={`px-4 py-2 text-lg font-semibold`}>
-          <span className={`mr-2`}>{formatJapaneseDateTime(program.race_closed_at)}</span>
-          <span className={`mr-2`}>{convertStadiumName(program.race_stadium_number)}</span>
+          <span className={`mr-2`}>{formatJapaneseDateTime(program.closed_at)}</span>
+          <span className={`mr-2`}>{convertStadiumName(program.stadium_number)}</span>
           {program.race_number}R
         </div>
 
         <div className={`px-6 py-4`}>
-          <ProgramTable boats={program.boats} pastPrograms={pastPrograms} />
+          <ProgramTable racers={program.racers} pastPrograms={pastPrograms} />
         </div>
       </div>
     </div>
