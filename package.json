@@ -16,20 +16,20 @@
     "react-spinners": "^0.17.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@testing-library/jest-dom": "^6.6.4",
-    "@testing-library/react": "^16.3.0",
+    "@eslint/eslintrc": "^3.3.7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.2.1",
+    "@types/node": "^26.6.5",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "eslint": "^9.33.0",
-    "eslint-config-next": "15.4.6",
+    "eslint": "^10.13.0",
+    "eslint-config-next": "16.4.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest-environment-jsdom": "^30.0.5",
+    "jest-environment-jsdom": "^30.5.2",
     "tailwindcss": "^4.1.11",
-    "ts-jest": "^29.4.1",
-    "typescript": "^5.9.2"
+    "ts-jest": "^29.4.15",
+    "typescript": "^7.0.2"
   }
 }
