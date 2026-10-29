@@ -32,5 +32,13 @@ updates:
       - dependency-name: "typescript"
         update-types: ["version-update:semver-major"]
     groups:
+      # react と react-dom は同じバージョンでないと動かないため、必ず同じ PR で更新する
+      # （@types は development にも該当するので、先に定義して優先させる）
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
       development:
         dependency-type: "development"
