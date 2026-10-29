@@ -30,6 +30,6 @@
     "jest-environment-jsdom": "^30.5.2",
     "tailwindcss": "^4.1.11",
     "ts-jest": "^29.4.15",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.2"
   }
 }

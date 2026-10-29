@@ -27,6 +27,10 @@ updates:
       include: "scope"
     labels: ["dependencies", "javascript"]
     open-pull-requests-limit: 10
+    ignore:
+      # ts-jest が TypeScript 7 に未対応（peer typescript <7）のため、メジャー更新は止める
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     groups:
       development:
         dependency-type: "development"
