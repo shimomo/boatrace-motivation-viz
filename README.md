@@ -1,11 +1,11 @@
-# BOA Motivation Viz
+# Boatrace Motivation Viz
 
 [![ci](https://github.com/shimomo/boatrace-motivation-viz/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shimomo/boatrace-motivation-viz/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/shimomo/boatrace-motivation-viz/branch/main/graph/badge.svg?token=DrJuOErMa9)](https://codecov.io/gh/shimomo/boatrace-motivation-viz)
 [![license](https://img.shields.io/github/license/shimomo/boatrace-motivation-viz)](LICENSE)
 [![last commit](https://img.shields.io/github/last-commit/shimomo/boatrace-motivation-viz)](https://github.com/shimomo/boatrace-motivation-viz/commits/main)
 
-[BOA Motivation Viz](https://shimomo.github.io/boatrace-motivation-viz/) は、ボートレースの出走表データを元に選手の体重増減からモチベーションを可視化する Web アプリケーションです。体重の変動から、選手のやる気やコンディションを視覚的に捉えることができます。 Next.js で開発し、GitHub Pages にデプロイしています。
+[Boatrace Motivation Viz](https://shimomo.github.io/boatrace-motivation-viz/) は、ボートレースの出走表データを元に選手の体重増減からモチベーションを可視化する Web アプリケーションです。体重の変動から、選手のやる気やコンディションを視覚的に捉えることができます。 Next.js で開発し、GitHub Pages にデプロイしています。
 
 ## 主な機能
 - 出走表データの API 取得と解析：外部 API から最新の出走情報を取得し、選手ごとの体重を抽出
@@ -37,4 +37,4 @@
 - データの正確性は保証しません。取得元の仕様変更等により動作が変わる可能性があります。
 
 ## ライセンス
-BOA Motivation Viz は [MITライセンス](LICENSE) の元で公開されています。
+Boatrace Motivation Viz は [MITライセンス](LICENSE) の元で公開されています。

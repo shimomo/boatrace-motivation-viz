@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'BOA Motivation Viz',
+  title: 'Boatrace Motivation Viz',
   description: 'ボートレースの出走表データを元に選手の体重増減からモチベーションを可視化するWebアプリケーション',
 };
 
